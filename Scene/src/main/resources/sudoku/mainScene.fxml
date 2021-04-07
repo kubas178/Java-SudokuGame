@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="390.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sudoku.StartGameControllers">
+   <children>
+      <AnchorPane prefHeight="67.0" prefWidth="390.0" style="-fx-background-color: #3D4956;">
+         <children>
+            <Text fill="#bfbfbf" layoutX="93.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SUDOKU" textAlignment="CENTER" wrappingWidth="183.13671875">
+               <font>
+                  <Font name="Liberation Sans Bold" size="39.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutY="380.0" prefHeight="17.0" prefWidth="390.0" style="-fx-background-color: #3D4956;">
+         <children>
+            <Text fx:id="authorsTextField" fill="#bfbfbf" layoutY="15.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="RIGHT" wrappingWidth="194.0">
+               <font>
+                  <Font name="Liberation Sans Bold" size="14.0" />
+               </font>
+            </Text>
+            <Text fx:id="authorsTextField1" fill="#bfbfbf" layoutX="204.0" layoutY="16.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="204.0">
+               <font>
+                  <Font name="Liberation Sans Bold" size="14.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <Text fill="#3d4956" layoutX="19.0" layoutY="106.0" stroke="#2e69a8" strokeType="INSIDE" strokeWidth="0.0" text="%_text1" wrappingWidth="139.13671875">
+         <font>
+            <Font name="Liberation Sans Bold" size="18.0" />
+         </font>
+      </Text>
+      <Button fx:id="startGameButton" defaultButton="true" layoutX="126.0" layoutY="321.0" mnemonicParsing="false" onAction="#actionStartGame" prefHeight="44.0" prefWidth="119.0" style="-fx-background-color: #3D4956;" text="%_btn1" textFill="#bfbfbf">
+         <font>
+            <Font name="Liberation Sans Bold" size="18.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <ComboBox fx:id="difficultyLevel" layoutX="14.0" layoutY="118.0" prefWidth="150.0" style="-fx-background-color: #3D4956; -fx-text-fill: #3D4956;">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow />
+         </effect>
+      </ComboBox>
+      <ImageView fx:id="imageSudoku" fitHeight="137.0" fitWidth="158.0" layoutX="195.0" layoutY="129.0" pickOnBounds="true" preserveRatio="true" />
+      <Button fx:id="loadGameButton" defaultButton="true" layoutX="126.0" layoutY="266.0" mnemonicParsing="false" onAction="#actionLoadGame" prefHeight="44.0" prefWidth="119.0" style="-fx-background-color: #3D4956;" text="%_btn5" textFill="#bfbfbf">
+         <font>
+            <Font name="Liberation Sans Bold" size="15.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="loloadDataBAsedGameButton1" defaultButton="true" layoutY="266.0" mnemonicParsing="false" onAction="#onActionButtonDatabase" prefHeight="44.0" prefWidth="119.0" style="-fx-background-color: #3D4956;" text="%_btn6" textFill="#bfbfbf">
+         <font>
+            <Font name="Liberation Sans Bold" size="15.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+   </children>
+</AnchorPane>
